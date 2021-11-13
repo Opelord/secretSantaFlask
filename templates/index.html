@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gwiazdor 2021</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <form method="POST" class="container">
+        <p class="merry">
+            <div class="select">
+                <select name="name" id="name">
+                    <option value=""> Wybierz swoje imię </option>
+                    {% for key in names %}
+                        <option value="{{ key }}"> {{ key }} </option>
+                    {% endfor %}
+                </select>
+            </div>
+        </p>
+        <div style="display: flex; justify-content: center">
+            <input class="button" type="submit" value="Losuj">
+        </div>
+    </form>
+
+    {% for i in range(200) %}
+        <div class="snowflake"></div>
+    {% endfor %}
+</body>
+</html>
