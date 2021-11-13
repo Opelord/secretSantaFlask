@@ -1,0 +1,1 @@
+This project is just for some people I know to have fun participating in Secret Santa event.
